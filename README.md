@@ -1,2 +1,2 @@
 # docker-pure-ftpd-single
-A Pure FTPD container for a single user
+A docker container for an ftp server with single user, $SINGLEUSER and password $SINGLEPASS which connects to /home/ftpusers/$SINGLEUSER
