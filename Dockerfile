@@ -6,5 +6,5 @@ ENV PUBLICHOST localhost
 
 ENV SINGLEUSER user
 ENV SINGLEPASS password
-RUN pure-pw useradd $SINGLEUSER -u ftpuser -d /home/ftpusers/$SINGLEUSER; echo $SINGLEPASS; echo $SINGLEPASS;
+RUN printf '$SINGLEPASS\n$SINGLEPASS\n' | pure-pw useradd $SINGLEUSER -u ftpuser -d /home/ftpusers/$SINGLEUSER
 RUN pure-pw mkdb
