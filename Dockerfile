@@ -1,4 +1,4 @@
-FROM stilliard/pure-ftpd
+FROM stilliard/pure-ftpd:hardened
 
 MAINTAINER John Kennedy
 
